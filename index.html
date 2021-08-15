@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        .topnav{
+            overflow: hidden; /* overflow in html is hiding the info that doesn't fit the box */
+            background-color: ghostwhite;
+            box-shadow:0px, 10px, ghostwhite;
+        }
+
+        .topnav a{  /*setting up the look for the a items in the navbar */
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px; /*top and bottom are 14px, left and right are 16px */
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .topnav a:hover{ /* what happens when I hover the contents of the navbar */
+            background-color:lightcoral;
+
+        }
+
+        body{
+            background-color: #242323;
+        }
+   
+    </style>
 <body>
-    <h1>
+
+    <div class="topnav" id="topnavID">
+        <a href="#home">Home</a>
+        <a href="#java">Java</a>
+        <a href="#Csharp">C#</a>
+    </div>
+    <h1 style="color: ghostwhite;">
         Hello World
     </h1>
-    <p>I'm hosted with Github Pages.</p>
+    <p style="color: ghostwhite">I'm hosted with Github Pages.</p>
 </body>
 </html>
