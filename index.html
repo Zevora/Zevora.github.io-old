@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Lyan's Portfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Importing JQUERY-->
+        <script src="Script.js"></script>   <!-- calling out to my js Script-->
+    </head>
+
+
     <style>
 
         :root{
-            --darkMode: 
+            --darkMode: #242323;
         }
 
         .topnav{
@@ -64,11 +71,13 @@
 
 	
         body{
-            background-color: #242323;
+            background-color: var(--darkMode);
         }
    
     </style>
 <body>
+    <h1 style="text-align: center; color: var(--darkMode);" id= "hidden">I was hidden.</h1>
+
 
     <div class="topnav" id="topnavID">
         <a href="#home">Home</a>
@@ -80,7 +89,10 @@
         Hello World
     </h1>
     <p style="color: ghostwhite">I'm hosted with Github Pages.</p>
+
+    <button>Alert me!</button>
+
+
 </body>
 
-<script> </script>
 </html>
