@@ -8,6 +8,11 @@ $(document).ready(function(){ //the inside of this function will be called when 
     });
 
     $("button").click(function(){   //ANY button clicked will run this
-        alert("I'm alerting you!");
+        //alert("I'm alerting you!");
+		var rickIMG = new Image(200, 100);
+		rickIMG.src = 'https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif'
+		document.body.appendChild(rickIMG);
+		
+		$("#p1").text("Get Rick Rolled!");
     });
 });
