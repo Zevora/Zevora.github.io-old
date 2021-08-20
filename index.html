@@ -5,7 +5,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- Importing JQUERY-->
         <script src="Script.js"></script>   <!-- calling out to my js Script-->
     </head>
-
+    <meta charset="UTF-8" />
 
     <style>
 
@@ -77,14 +77,21 @@
 		img{
 			border-radius: 8px;
 		}
+
+        h2{
+            text-align:center;
+            color: ghostwhite;
+            font-weight: bold;
+        }
    
     </style>
 <body>
+    <div id="pageTop"></div>
     <h1 style="text-align: center; color: var(--darkMode);" id= "hidden">I was hidden.</h1>
 
 
     <div class="topnav" id="topnavID">
-        <a href="#home">Home</a>
+        <a href="#pageTop">Home</a>
         <a href="#java">Java</a>
         <a href="#Csharp">C#</a>
         <a href="#javascript">Javascript</a>
@@ -94,9 +101,18 @@
     </h1>
     <p style="color: ghostwhite" id="p1">I'm hosted with Github Pages.</p>
 	<!--<img src="https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif" alt="Jquery"> -->
+    <div id="rickButton">
     <button>Alert me!</button>
 	<br>
-	
+    <br>
+    </div>
+    <hr size="8" width="75%" color="ghostwhite">  
+	<h2 id="java">Java 75% width</h2>
+    <hr size="8" width="80%" color="ghostwhite">  
+    <h2 id="Csharp">C# 80% width</h2>
+    <hr size="8" width="50%" color="ghostwhite">  
+    <h2 id="javascript">JavaScript 50% width</h2>
+    <hr size="8" width="100%" color="ghostwhite">
 
 </body>
 
