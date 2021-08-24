@@ -8,6 +8,40 @@
     <meta charset="UTF-8" />
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header{
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+
+        .hamburger{
+            display: none;
+        }
+
+        .bar{
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #101010;
+        }
 
         :root{
             --darkMode: #242323;
@@ -86,16 +120,56 @@
    
     </style>
 <body>
+    <header class="header">
+        <nav class="topnav" id="topnavID">
+            <a href="#" class="nav-logo">Home</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">C#</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+                <!--
+            <a href="#pageTop">Home</a>
+            <a href="#java">Java</a>
+            <a href="#Csharp">C#</a>
+            <a href="#javascript">Javascript</a>
+                -->
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    
     <div id="pageTop"></div>
     <h1 style="text-align: center; color: var(--darkMode);" id= "hidden">I was hidden.</h1>
 
     <!-- The TopNav-->
-    <div class="topnav" id="topnavID">
-        <a href="#pageTop">Home</a>
-        <a href="#java">Java</a>
-        <a href="#Csharp">C#</a>
-        <a href="#javascript">Javascript</a>
-    </div>
+    
     <h1 style="color: ghostwhite;">
         Hello World
     </h1>
